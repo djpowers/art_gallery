@@ -3,6 +3,7 @@ class Customer < ActiveRecord::Base
     dependent: :destroy
   has_many :collections,
     through: :customer_favorite_collections
+  has_many :artworks
   validates_email_format_of :email
   validates_presence_of :name
 

@@ -1,8 +1,8 @@
 # Read about factories at https://github.com/thoughtbot/factory_girl
 
 FactoryGirl.define do
-  factory :customer do
-    name "Jim"
-    email "bo@bob.com"
+  factory :medium do
+    title "MyString"
+    artwork_id 1
   end
 end

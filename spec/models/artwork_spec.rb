@@ -15,4 +15,5 @@ describe Artwork do
   it { should allow_value(true).for(:for_sale?) }
   it { should allow_value(false).for(:for_sale?) }
 
+  it { should belong_to(:medium) }
   end

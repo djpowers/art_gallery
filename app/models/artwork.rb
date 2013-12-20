@@ -8,4 +8,9 @@ class Artwork < ActiveRecord::Base
   validates_numericality_of :collection_id
   validates_numericality_of :customer_id
   validates :for_sale?, :inclusion => {:in => [true, false]}
+
+  belongs_to :medium
+  belongs_to :artist
+  belongs_to :collection
+  belongs_to :customer
 end

@@ -12,4 +12,5 @@ describe Artist do
 
   it { should have_valid(:art_style).when("John became an artist at the age of 3.") }
 
+  it { should have_many (:artworks) }
 end

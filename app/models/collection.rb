@@ -4,4 +4,5 @@ class Collection < ActiveRecord::Base
     through: :customer_favorite_collections
 
   validates_presence_of :name
+  has_many :artworks
 end

@@ -2,5 +2,6 @@
 
 FactoryGirl.define do
   factory :collection do
+    name 'Lalalala'
   end
 end
