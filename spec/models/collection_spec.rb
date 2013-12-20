@@ -6,4 +6,6 @@ describe Collection do
 
   it { should have_many(:customer_favorite_collections) }
   it { should have_many(:customers).through(:customer_favorite_collections) }
+  it { should have_many(:artworks) }
+
 end

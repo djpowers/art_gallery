@@ -16,4 +16,8 @@ describe Artwork do
   it { should allow_value(false).for(:for_sale?) }
 
   it { should belong_to(:medium) }
+  it { should belong_to(:artist) }
+  it { should belong_to(:collection) }
+  it { should belong_to(:customer) }
   end
+

@@ -9,5 +9,6 @@ describe Customer do
 
   it { should have_many(:customer_favorite_collections).dependent(:destroy) }
   it { should have_many(:collections).through(:customer_favorite_collections) }
+  it { should have_many(:artworks) }
 
 end
