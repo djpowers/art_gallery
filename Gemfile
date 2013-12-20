@@ -40,6 +40,8 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'dotenv'
   gem 'hirb'
+  gem 'validates_email_format_of'
+  gem 'date_validator'
 end
 
 # Use ActiveModel has_secure_password
